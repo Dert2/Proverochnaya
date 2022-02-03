@@ -76,6 +76,14 @@ namespace Proverochnaya
             Employee employee3 = new Employee() { FIO = "asdsd jhhjkhjk wrewrw", tel = "86786969970" };
             Employee employee4 = new Employee() { FIO = "cxxvv jmhjmkhjm vbvbnv", tel = "2342425354" };
             Employee employee5 = new Employee() { FIO = "dsfsfs fgjjghk jkdgdrte", tel = "2534564575686" };
+            Console.WriteLine("Создаём 5 сотрудников:");
+            Console.WriteLine("");
+            Console.WriteLine(employee1.FIO);
+            Console.WriteLine(employee2.FIO);
+            Console.WriteLine(employee3.FIO);
+            Console.WriteLine(employee4.FIO);
+            Console.WriteLine(employee5.FIO);
+            Console.WriteLine("");
             employee1.systeme = systeme;
             employee2.systeme = systeme;
             employee3.systeme = systeme;
@@ -84,6 +92,9 @@ namespace Proverochnaya
             employee1.DestroyShovel();
             employee2.DestroyShovel();
             employee2.DestroyShovel();
+            Console.WriteLine("У 1 сотрудника сломалась 1 лопата, у 2 сломались 2 лопаты");
+            Console.WriteLine("");
+            Console.WriteLine("Сотрудник, у которого сломалось наибольшее кол-во лопат:");
             systeme.FindDestroyer();
             Console.WriteLine(systeme.FindDestroyer().FIO + " " + systeme.FindDestroyer().tel);
         }
